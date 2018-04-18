@@ -1,0 +1,188 @@
+
+.jumbotron h3{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8em;
+    font-weight: 800;
+    color: #0097FB;
+    text-align: left;
+}
+
+.jumbotron p{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(92, 91, 91);
+    text-align: left;
+}
+
+.lead1{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: rgb(92, 91, 91);
+    text-align: left;
+}
+
+.jumbotron1{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+
+}
+.jumbotron1 .descarga2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgb(92, 91, 91);
+    text-align: center;
+    
+}
+.jumbotron1 .descarga1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: #0097FB;
+    text-align: center;
+}
+.jumbotron span{
+    position: absolute;
+    display: inline; 
+    width: 100%;
+    height: auto;
+    margin-left: 34%;
+}
+.jumbotron1 span{
+    display: inline; 
+    width: 100%;
+    height: auto;
+}
+.button{
+    display: flex;
+    background-color: #dcdfe2;
+    color: #0097FB;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*hover*/
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color:#0097FB;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron:hover h3{
+    color: rgb(253, 216, 7);
+}
+.jumbotron:hover p{
+    color: rgb(255, 255, 255);
+}
+.jumbotron:hover{
+    background-color: #0097FB;
+}
+.lead11:hover p{
+    color: rgb(255, 255, 255);
+}
+.jumbotron1:hover h3{
+    color: rgb(253, 216, 7);
+}
+.jumbotron1:hover p{
+    color: rgb(255, 255, 255);
+}
+.jumbotron1:hover{
+    background-color: #0097FB
+}
+.lead11:hover p{
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+
+	.jumbotron h3{
+        font-size: 4em;
+        font-weight: 600;
+    }
+    
+    .jumbotron p{
+        font-size: 1.2em;
+        font-weight: 400;
+       
+    }
+    .lead1{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .jumbotron1{
+        padding: 1rem .5rem;
+        margin-bottom: 1rem;
+        background-color: #e9ecef;
+        border-radius: .3rem;
+    
+    }
+    .jumbotron1 .descarga2{
+        font-size: .8em;
+        font-weight: 300;
+    }
+    .jumbotron1 .descarga1{
+        font-size: 2em;
+        font-weight: 600;
+    }
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    margin-top: 2%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+ 

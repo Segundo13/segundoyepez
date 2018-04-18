@@ -1,0 +1,355 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+
+/* Style the header */
+
+header {
+	width: 100%;
+	height: auto;
+	position: relative;
+    background-color: #ffffff;
+    padding: 1%;
+	text-align: center;
+	display: flex;
+	justify-content: center;	
+}
+.header{
+	position: absolute;
+	height: 150px;
+	margin-bottom: 1%;
+	margin-top: 3%;
+	width: 100%;
+}
+
+.logo{
+	width: 100%;
+	height: auto;
+	margin-top: 0%;
+}
+div {
+    display: block;
+}
+
+#contenedor{
+	width: 100%;
+	height: 412px;
+	margin-bottom: 2%;
+
+}
+
+.slider-wrap{
+	margin-top: 0%;
+	width: 100%;
+	height:100%;
+	position: relative;
+}
+.single-slide {
+	width: 100%;
+	height: 100%;
+  position: absolute;
+opacity: 0;
+animation: slider-animation;
+animation-duration: 25s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+background-size: cover;
+}
+
+#slide-1 {background-image: url(img/bannermuseo.jpg);}
+#slide-2 {animation-delay: 5s; background-image: url(img/slider2.jpg);}
+#slide-3 {animation-delay: 10s; background-image: url(img/bannermuseo.jpg);}
+#slide-4 {animation-delay: 15s; background-image: url(img/slider2.jpg);}
+#slide-5 {animation-delay: 20s; background-image: url(img/bannermuseo.jpg);}
+
+@keyframes slider-animation {
+  
+0% {
+  opacity: 0;
+}
+6% {
+  opacity: 1;
+}
+24% {
+  opacity: 1;
+}
+30% {
+  opacity: 0;
+}
+100% {
+  opacity: 0;
+}
+}
+
+/* Container for flexboxes-prueba */
+
+ *, ::after, ::before {
+    box-sizing: border-box;
+}
+#barra-header h1{
+	color: #ffffff;
+	font-family: 'Arizonia', cursive;
+	font-size: 3.2em;
+	padding:0%;
+	margin-left: 1%;
+}
+#barra-header{
+	margin-top: -2%;
+	width: auto;
+	height: 68px;
+	background-color: dodgerblue;
+}
+#row a{
+	position: relative;
+	height: 100%;
+}
+.card{
+	
+	padding: 1%;
+	margin-left: 1%;
+	margin-right: 1%;	
+}
+.card text-center{
+	width: 80%;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+
+}
+
+/* Container for flexboxes */
+.row {
+	-webkit-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-flex;
+    padding: 1.5%;
+	z-index: 3;
+	border: 1px;
+		
+}
+
+
+/* Create three unequal columns that sits next to each other */
+.column {
+	 padding: 10px; 
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+} */
+#row img {
+	padding-bottom: 1%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	border-radius: 50%; 
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8); 
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8); 
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); 
+}
+.row img{
+	z-index: 9;
+}
+/*.c2{
+	/*position: relative;
+}
+
+.c2 .button1 {
+	position: absolute;	
+}
+.c3{
+	position: relative;
+}
+
+.c3 .button2 {
+	position: absolute;	
+}
+.c4{
+	position: relative;
+}
+
+.c4 .button3 {
+	position: absolute;	
+}*/
+.button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 28px;
+	color: #000000;
+	font-size: 16px;
+	margin-top: 1%;
+	font-style: italic;
+	
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    
+    color: rgb(2, 125, 197);
+}
+
+.mensaje {
+	position: relative;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+    z-index: 3;
+    height: 280px;
+	border: 1px;
+	margin-top: 0;
+	padding: 1%;
+}
+
+.rectangulo{
+	color:  #144a78;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	font-weight: 520;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.8em;
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+	margin-top: -14%;
+	margin-bottom: 11%;
+	z-index: 80;
+	
+}
+.rectangulo h2{
+	color: rgb(0, 0, 0);
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+	z-index: 6;
+}
+
+#notas img{
+	display: flex;
+	align-content: center;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	margin-top: -10%;
+	
+}
+#notas img:hover {
+	filter: saturate(180%);
+}
+
+.iconos{
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.iconos-redes{
+	display: flex;
+	margin-top: -6%;
+	height: 100%;
+	padding: .5%;
+	z-index: 31;	
+}
+.iconos img{
+	width: 100%;
+	height: 100;
+	display: flex;
+	/*visibility: hidden;*/
+	margin-left: 1%;
+	margin-right: 1%;
+	z-index: 30;
+
+}
+.iconos :hover{
+	visibility: hidden;
+}
+nav#nav1{ height: auto; }
+
+/*iconos-redes>img{
+	
+	position: absolute;
+	margin: 5px;
+	padding: 20px;
+	display: none;
+	z-index: 29;
+}
+/*.color :hover{
+	display: block;
+}*/
+
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+.barra{
+	display: flex;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	font-size: 13px;
+	padding-bottom: 0%;
+	font-weight: 400;
+	padding-right: 9%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px){
+.row {
+      -webkit-flex-direction: column;
+	  flex-direction: column;
+	}
+}
+@media (max-width: 375px){
+	#contenedor{
+	display: none
+	}
+	header {
+		width: 100%;
+		height: auto;
+		position: relative;
+		background-color: #ffffff;
+		padding: 14%;
+		text-align: center;
+		display: flex;
+		justify-content: center;	
+	}
+	.header{
+		position: absolute;
+		height: 150px;
+		margin-bottom: 1%;
+		margin-top: 3%;
+		width: 100%;
+	}
+	
+	.logo{
+		width: auto;
+		height: auto;
+		margin-top: 0%;
+	}
+	div {
+		display: block;
+	}
+	#row{
+		margin-top: 35%;
+	}
+}

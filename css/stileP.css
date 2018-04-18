@@ -1,0 +1,69 @@
+header{
+    margin-top: 0px;
+    height: 100px;
+}
+body{
+    padding-top: 30px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.slider-wrap{
+	width: 100%;
+	height:440px;
+	position: relative;
+}
+.single-slide {
+width: 100%;
+  height: 100%;
+  position: absolute;
+opacity: 0;
+animation: slider-animation;
+animation-duration: 25s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+background-size: cover;
+}
+
+#slide-1 {background-image: url(img/bannermuseo.jpg);}
+#slide-2 {animation-delay: 5s; background-image: url(img/slider2.jpg);}
+#slide-3 {animation-delay: 10s; background-image: url(img/bannermuseo.jpg);}
+#slide-4 {animation-delay: 15s; background-image: url(img/slider2.jpg);}
+#slide-5 {animation-delay: 20s; background-image: url(img/bannermuseo.jpg);}
+
+@keyframes slider-animation {
+  
+0% {
+  opacity: 0;
+}
+6% {
+  opacity: 1;
+}
+24% {
+  opacity: 1;
+}
+30% {
+  opacity: 0;
+}
+100% {
+  opacity: 0;
+}
+}
+
+/* Container for flexboxes-prueba */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.mensaje {
+	position: relative;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+    z-index: 3;
+    height: 280px;
+    border: 1px;
+}
